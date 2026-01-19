@@ -29,7 +29,7 @@ int main(void) {
 
     printf("XOR-encoded bytes (hex):\n");
 
-    size_t shellcodelen = sizeof(buf);
+    size_t shellcodelen = sizeof(buf) - 1;
     size_t keylen = strlen(key);
 
     for (size_t i = 0; i < shellcodelen; i++) {
